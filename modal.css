@@ -1,0 +1,165 @@
+/* Estilo da janela modal */
+.modal {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: #620000; 
+    
+  }
+
+  .modalAgrad {
+    display: block; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    overflow: auto; 
+    background-color: #620000; 
+    animation: fadein 500ms;
+  }
+
+  
+  /* Estilo do conteúdo da janela modal */
+  .modal-content {
+    background-color: #620000;
+    margin: 15% auto;
+    padding: 20px;
+    width: 80%;
+    box-shadow: rgba(0, 0, 0, 0.7) 0px 7px 29px 0px;  }
+  
+  /* O botão de fechar (x) */
+  .close {
+    background: -webkit-linear-gradient(45deg, #F9F295, #DBBB7E, #F7EF8A, #B88A44);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  
+  .icon {
+    padding: 10px;
+    background: dodgerblue;
+    color: white;
+    min-width: 50px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  
+  /*input[type="text"], input[type="tel"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type="text"]:focus, input[type="tel"]:focus {
+    background-color: #ddd;
+    outline: none;
+  }*/
+
+  /*new form*/
+
+form {
+  width: 100%;
+  margin-top: 50px;
+}
+
+.inputbox {
+  position: relative;
+  height: 50px;
+  margin-bottom: 30px;
+}
+
+input{
+  font-size: 1.6em;
+  font-weight: 600;
+  font-family: 'Quicksand';
+  color: #800000;
+}
+
+.inputbox input {
+  top: 0;
+  left: 0;
+  width: 100%;
+  outline: none;
+  background: linear-gradient(40deg, white, #B88A44) padding-box,
+              linear-gradient(45deg, #F9F295, #DBBB7E, #F7EF8A, #B88A44) border-box;
+  border-radius: 5em;
+  border: 3px solid transparent;
+  padding: 10px;
+  font-size: 1.2em;
+}
+.inputbox:last-child {
+  margin-bottom: 0;
+}
+.inputbox span {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.6em;
+  font-weight: 800;
+  transition: 0.6s;
+  font-family: 'Quicksand';
+  color: #800000;
+}
+.inputbox input:focus ~ span,
+.inputbox input:valid ~ span {
+  transform: translateX(-13px) translateY(-35px);
+  font-size: 1.4em;
+  font-weight: 800;
+  background: -webkit-linear-gradient(0deg, #F9F295, #DBBB7E, #F7EF8A, #B88A44);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.inputbox [type="submit"] {
+  width: 100%;
+  background: -webkit-linear-gradient(45deg, #F9F295, #DBBB7E, #F7EF8A, #B88A44);
+  font-family: 'Quicksand';
+  font-weight: 900;
+  font-size: 16px;
+  text-align: center;
+  color: #800000;
+  border-radius: 5em;
+  box-shadow: 0 0 10px black;
+
+}
+
+/*.inputbox:hover [type="button"] {
+  background: linear-gradient(45deg, greenyellow, dodgerblue);
+}*/
+
+@keyframes fadein {
+	from {
+		opacity:0;
+	}
+	to {
+		opacity:1;
+	}
+}
+  
+  

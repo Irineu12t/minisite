@@ -1,0 +1,72 @@
+
+/*animação home*/
+
+.div-logo-main{
+    animation: slideDown 1s ease-out forwards;
+}
+
+.text-insta, .text-main{
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+#div_whats{
+    animation: slideRight 1s ease-out forwards;
+}
+
+#div_cursos{
+    animation: slideRight 1.2s ease-out forwards;
+}
+
+#div_cat{
+    animation: slideRight 1.4s ease-out forwards;
+}
+
+#div_nov{
+    animation: slideRight 1.6s ease-out forwards;
+}
+
+#div_loc{
+    animation: slideRight 1.8s ease-out forwards;
+}
+
+#div_cuidados{
+    animation: slideRight 2s ease-out forwards;
+}
+
+#div_site{
+    animation: slideRight 2.2s ease-out forwards;
+}
+
+/*animação cardapio*/
+
+#title-cardapio{
+    animation: fadeIn 1.5s ease-out forwards;
+}
+
+@keyframes slideDown {
+
+    from{
+        transform: translateY(-200px);
+    }to{
+        transform: translateY(0px);
+    }
+    
+}
+
+@keyframes fadeIn {
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
+    
+}
+
+@keyframes slideRight {
+    from{
+        transform: translateX(400px);
+    }to{
+        transform: translateX(0px);
+    }
+    
+}
