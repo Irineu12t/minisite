@@ -1,6 +1,7 @@
 const nodemailer = require("nodemailer");
 const express = require("express");
 const bodyParser = require('body-parser');
+const porta = require('dotenv');
 
 const mensagem = require("./mensagememail");
 
@@ -74,7 +75,7 @@ app.post('/sendemail', (req, res) => {
     
 //chat
 
-const porta = 3000;
+const porta = process.env.PORTA;
 
 app.listen(porta, () => {
     console.log('Servidor rodando na porta '+porta);
