@@ -74,14 +74,13 @@ app.post('/sendemail', (req, res) => {
     
 //chat
 
-<<<<<<< HEAD
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000');
 });
-=======
+
 const porta = 3000;
 
 app.listen(porta, () => {
     console.log('Servidor rodando na porta '+porta);
 });
->>>>>>> df5579eec9d8e3f4e46008631b02dee3f86d3590
