@@ -76,7 +76,7 @@ app.post('/sendemail', (req, res) => {
 
 
 
-const porta = 3000;
+const porta = 5500;
 
 app.listen(porta, () => {
     console.log('Servidor rodando na porta '+porta);
